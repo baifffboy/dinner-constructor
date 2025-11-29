@@ -25,6 +25,8 @@ public class Main {
                     break;
                 case "3":
                     return;
+                default:
+                    System.out.println("Такой команды не существует!");
             }
         }
     }
@@ -54,7 +56,6 @@ public class Main {
         System.out.println("Вводите типы блюда, разделяя символом переноса строки (enter). Для завершения ввода введите пустую строку");
         String nextItem = scanner.nextLine();
 
-        //реализуйте ввод типов блюд
         ArrayList<String> selectedTypes = new ArrayList<>();
         while (!nextItem.isEmpty()) {
             if (dc.checkType(nextItem)) {

@@ -7,7 +7,6 @@ import java.util.Random;
 public class DinnerConstructor {
 
     HashMap<String, ArrayList<String>> dinnersByType = new HashMap<String, ArrayList<String>>();
-    Random random = new Random();
 
     public void addNewDish(String dishType, String dishName) {
         ArrayList<String> dishesForType;
@@ -45,6 +44,7 @@ public class DinnerConstructor {
     }
 
     private String getRandomDish(ArrayList<String> availableDishes) {
+        Random random = new Random();
         int numberOfDishesForType = availableDishes.size();
         int dishIndex = random.nextInt(numberOfDishesForType);
         String selectedDish = availableDishes.get(dishIndex);
