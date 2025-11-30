@@ -1,2 +1,2 @@
 # dinner-constructor
-Precode for sprint 3 dinner constructor
+Рабаота с коллекциями, выбор рандомного элемента и их добавление
